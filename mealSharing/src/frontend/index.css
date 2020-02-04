@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+	font-family: "Montserrat", sans-serif;
+}
+section {
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10em;
+	font-size: 70px;
+	font-weight: bolder;
+	color: rgb(243, 247, 19);
+}
+header {
+	padding: 20px;
+	background-color: black;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+body {
+	background-color: rgb(201, 250, 118);
+	align-content: center;
+	line-height: 1.5em;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#mealDiv {
+	margin-top: 20px;
+	height: 5em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5em;
+	font-size: 90px;
+	color: white;
+}
+
+#root {
+	margin-top: 5em;
+}
+#searchBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border: 2px solid;
+	background-color: black;
+	color: white;
+}
+#mealSearch {
+	padding: 8px;
+	border-radius: 10px;
+	width: 300px;
+	border: none;
+}
+#mealSearch input:focus,
+#searchBtn button:focus {
+	outline: none;
+}
+#siteDiv {
+	margin-left: 30%;
+}
+#searchBtn {
+	padding: 8px;
+	width: 200px;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	background-color: rgb(55, 126, 41);
+	color: white;
+}
+#menuBtn:hover {
+	background-color: rgb(62, 212, 42);
+	text-align: center;
+}
+.menu li {
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	color: white;
+}
+li a {
+	display: block;
+	color: white;
+	padding: 10px;
+	align-content: center;
+	text-decoration: none;
+}
+#mealSection {
+	margin-left: 30px;
+	margin-right: 40px;
+	height: 20em;
+	border-top: 4px dotted rgb(8, 20, 63);
+	border-right: 4px dotted rgb(8, 20, 63);
+}
+.image {
+	float: right;
+	width: 20em;
+	height: 20em;
+	border-bottom: 3px dotted rgb(8, 20, 63);
+	border-left: 3px dotted rgb(8, 20, 63);
+}
+.mealItems {
+	line-height: 2em;
+}
+.reviewBtn {
+	padding: 15px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.reviewBtn:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+
+#reviewDiv {
+	margin-top: 2em;
+}
+
+#reserveBtn,
+#reserveMeal {
+	margin-top: 7%;
+	padding: 12px;
+	margin-left: 10px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+#reserveBtn:hover,
+#reserveMeal:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+.backToAll {
+	margin-top: 7%;
+	padding: 15px;
+	margin-left: 10px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+}
+.backToAll:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+#backToAllMeals {
+	padding: 12px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	border-radius: 10px;
+}
+#backToAllMeals:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+#btnDiv {
+	margin-top: 5%;
+}
+.toAll {
+	margin-top: 7%;
+	padding: 15px;
+	color: rgb(18, 9, 56);
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+#toAll:hover {
+	padding: 25px 25px;
+}
+
+#form {
+	margin-left: 20%;
+	margin-top: 15%;
+	line-height: 4em;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+	visibility: hidden;
+}
+#reviewForm {
+	margin-left: 20%;
+	margin-top: 10%;
+	line-height: 4em;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+	visibility: hidden;
+}
+h2 {
+	color: rgb(14, 14, 88);
+	font-weight: bolder;
+}
+h3 {
+	margin-left: 24%;
+	font-size: 35px;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	text-decoration: underline;
+	color: rgb(28, 28, 75);
+}
+#mealTitle {
+	margin-left: 20%;
+	font-size: 35px;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	text-decoration: underline;
+	color: rgb(28, 28, 75);
+}
+#sendReservation,
+#searchedReservation {
+	margin-left: 30%;
+	margin-top: 7%;
+	border-radius: 50%;
+	padding: 20px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+}
+#sendReservation:hover,
+#searchedReservation:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 40px 40px;
+}
+#sendReview {
+	margin-left: 29%;
+	margin-top: 7%;
+	border-radius: 50%;
+	padding: 20px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+}
+#sendReview:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 40px 40px;
+}
+.input {
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 100px;
+}
+footer {
+	padding: 50px;
+	background-color: black;
+	color: white;
+	margin-top: 40em;
+}
+#copyRight {
+	float: right;
+}
