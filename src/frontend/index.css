@@ -1,0 +1,271 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(1, 27, 1);
+	font-family: "Courier New", Courier, monospace;
+	line-height: 1.5em;
+	font-size: 16px;
+	font-weight: bold;
+}
+.logo {
+	border-radius: 50%;
+	width: 5em;
+	padding: .7em;
+	border: 0 1px solid rgb(2, 87, 2);
+	box-shadow: 5px 10px  rgb(2, 65, 2);
+}
+section {
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10em;
+	font-size: 50px;
+	font-weight: bolder;
+	color: rgb(243, 247, 19);
+}
+#mealDiv {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	height: 4em;
+	justify-content: center;
+	line-height: 5em;
+	font-size: 5em;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+#navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid;
+	background-color: white;
+	color: rgb(1, 27, 1);
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 16px;
+}
+#searchMeal {
+	border-top: thin solid #e5e5e5;
+	border-right: thin solid #e5e5e5;
+	border-left: thin solid #e5e5e5;
+	background-color: white;
+	float: left;
+	height: 26px;
+	border: none;
+	font-family: "Courier New", Courier, monospace;
+	color: rgb(1, 27, 1);
+	font-weight: bold;
+	width: 15em;
+}
+#navBar input:focus,
+#searchBtn button:focus {
+	outline: none;
+}
+#searchBtn {
+	background-color: #f1f1f1;
+	border-top: thin solid #e5e5e5;
+	background-color: white;
+	cursor: pointer;
+	float: left;
+	height: 28px;
+	border: none;
+	text-align: center;
+	width: 50px;
+}
+#searchBtn img {
+	margin: 4px;
+	width: 20px;
+}
+#searchMenu {
+	float: right;
+}
+.menu li {
+	float: left;
+	list-style-type: none;
+	text-align: center;
+}
+li a {
+	display: block;
+	color: rgb(1, 27, 1);
+	font-weight: bolder;
+	padding: 10px;
+	align-content: center;
+	text-decoration: none;
+}
+.mealSection {
+	margin: 0;
+	display: flex;
+	color: rgb(104, 18, 18);
+	font-family: "Courier New", Courier, monospace;
+	margin-top: 5%;
+	margin-right: 10em;
+	margin-left: 6em;
+	background-color: rgb(165, 165, 163);
+	border-radius: 5em;	
+}
+.meal {
+	margin: 3.5em;
+}
+.image {
+	float: right;
+	margin-top: 1em;
+	width: 15em;
+	height: 15em;
+	border-radius: 4em;
+	padding: 50px;
+	transition: transform 0.2s;
+	margin: 0 auto;
+}
+.image:hover {
+	transform: scale(2.5);
+}
+.mealItems {
+	line-height: 2em;
+}
+.reviewBtn {
+	line-height: 12em;
+	padding: 12px;
+	background-color: rgb(1, 27, 1);
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.reviewBtn:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+#reserveBtn,
+#reserveMeal {
+	margin-top: 7%;
+	padding: 13px;
+	margin-left: 13px;
+	background-color: rgb(1, 27, 1);
+	color: white;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+#reserveBtn:hover,
+#reserveMeal:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+.backToAll {
+	margin-top: 7%;
+	padding: 13px;
+	margin-left: 13px;
+	background-color: rgb(1, 27, 1);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+}
+.backToAll:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+#backToAllMeals {
+	padding: 13px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	border-radius: 10px;
+}
+#backToAllMeals:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 25px 40px;
+}
+.toAll {
+	margin-top: 7%;
+	padding: 15px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}
+.toAll:hover {
+	padding: 25px 25px;
+}
+.allMealsBtn {
+	padding: .4em;
+	background-color: rgb(148, 12, 12);
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 10em;
+}
+.allMealsBtn:hover {
+	padding: 1.5em 1.5em;
+}
+.form {
+	margin-left: 27%;
+	margin-top: 15%;
+	line-height: 4em;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+}
+#form {
+	visibility: hidden;
+}
+h3 {
+	margin-left: 20%;
+	font-size: 30px;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	color: white;
+}
+h4 {
+	background-color: rgb(165, 165, 163);
+	padding: 10px;
+	color: rgb(8, 8, 59);
+	font-weight: bolder;
+}
+.reviews {
+	color: white;
+	margin-right: 3em;
+}
+#sendReservation,
+#sendReview {
+	margin-left: 30%;
+	margin-top: 7%;
+	border-radius: 50%;
+	padding: 20px;
+	background-color: rgb(18, 9, 56);
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+}
+#sendReservation:hover,
+#sendReview:hover {
+	background-color: rgb(49, 16, 16);
+	padding: 40px 40px;
+}
+.input {
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 100px;
+}
+#message {
+	color: white;
+}
+footer {
+	display: flex;
+	padding: 30px;
+	background-color: white;
+	color: white;
+	justify-content: space-between;
+}
+.copyRight {
+	border-radius: 50%;
+}
