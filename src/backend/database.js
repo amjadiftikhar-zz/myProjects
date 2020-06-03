@@ -7,3 +7,6 @@ const { MYSQL_URL } = process.env;
 let pool = mysql.createPool(MYSQL_URL);
 
 module.exports = pool;
+
+
+
