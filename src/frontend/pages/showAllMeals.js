@@ -10,7 +10,7 @@ function showAllMeals(data){
 				</a></h2>
 				<div>Description:&nbsp${meal.description}
 				<a href="meals/${meal.id}">
-				<img class = "image" src="./src/frontend/pages/images/${meal.id}.jpg" 
+				<img class = "image" src="../../../public/images/${meal.id}.jpg" 
 				alt=""></img></a>
 				</div><br>
 				<div>Location:&nbsp${meal.location}</div>
@@ -19,6 +19,7 @@ function showAllMeals(data){
 				<div><a class="reviewBtn href="meals#form">Submit Review</a></div>
 			</div>						
 		</div>`;
+		// <img src="../../../public/images/${meal.id}.jpg" alt=""/>
 		rootElement.appendChild(mealsList);
 		document.querySelectorAll(".reviewBtn").forEach(element => {
 			element.addEventListener("click", () => {

@@ -6,8 +6,8 @@ export default function showMeal(meal){
 	<div class = "mealSection">
 		<div class = "meal">
 			<h2>${meal[0].title}</h2>
-			<div>Description:&nbsp${meal[0].description}
-			<img class = "image" src="./src/frontend/pages/images/${meal[0].id}.jpg" 
+			<div>Description:&nbsp${meal[0].description}			 
+			<img class = "image" src="../../../public/images/${meal[0].id}.jpg"
 			alt=""></img>
 			</div><br>
 			<div>Location:&nbsp${meal[0].location}</div>
