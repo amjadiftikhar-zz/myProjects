@@ -16,6 +16,9 @@ const path = require("path");
 const buildPath = path.join(__dirname, "../../dist");
 app.use(express.static(buildPath));
 
+const buildPathPublic = path.join (__dirname, '../../public');
+app.use ('/public', express.static (buildPathPublic));
+
 app.use(express.urlencoded({ extended: true }));
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
@@ -31,13 +34,19 @@ app.use("/api", router);
 // For week4 no need to look into this!
 // Ensures that the client router works on reload aswell.
 // Sends all requests back to index.html where the routing lib takes over
+
+
+
 app.get("/*", function(req, res) {
-	res.sendFile(path.join(__dirname, "./../../public/index.html"), function(err) {
+	res.sendFile(path.join(__dirname, "./../../dist/index.html"), function(err) {
 		if (err) {
 			res.status(500).send(err);
 		}
 	});
 });
+
+
+
 
 app.listen(PORT, () => {
 	console.log(`Server listening on port ${PORT}!`);
