@@ -19,7 +19,6 @@ function showAllMeals(data){
 				<div><a class="reviewBtn href="meals#form">Submit Review</a></div>
 			</div>						
 		</div>`;
-		// <img src="../../../public/images/${meal.id}.jpg" alt=""/>
 		rootElement.appendChild(mealsList);
 		document.querySelectorAll(".reviewBtn").forEach(element => {
 			element.addEventListener("click", () => {

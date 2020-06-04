@@ -35,8 +35,6 @@ app.use("/api", router);
 // Ensures that the client router works on reload aswell.
 // Sends all requests back to index.html where the routing lib takes over
 
-
-
 app.get("/*", function(req, res) {
 	res.sendFile(path.join(__dirname, "./../../dist/index.html"), function(err) {
 		if (err) {
@@ -44,9 +42,6 @@ app.get("/*", function(req, res) {
 		}
 	});
 });
-
-
-
 
 app.listen(PORT, () => {
 	console.log(`Server listening on port ${PORT}!`);

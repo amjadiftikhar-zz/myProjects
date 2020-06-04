@@ -2,7 +2,7 @@ function homeRouter(req, router) {
 	document.body.innerHTML = `
 	<div id="navBar">
 		<div class="log">
-			<a href=""><img class="logo" src="./src/frontend/pages/images/logo.png" /></a>
+			<a href=""><img class="logo" src="../../../public/images/logo.png" /></a>
 		</div>
 		<div class="menu">
 			<ul id="menuContent">
@@ -11,29 +11,29 @@ function homeRouter(req, router) {
 			</ul>
 		</div>
 	</div>				
-	<section style="background-image: url('./src/frontend/pages/images/mealsharing.jpg')">
+	<section style="background-image: url('../../../public/images/mealsharing.jpg')">
 		<a class= "allMealsBtn" href="/meals">Click Me!</a>	
 		Welcome to the meals Homepage	
 	</section>	
 	<footer>
 		<div>
 			<img class="copyRight" 
-			src="./src/frontend/pages/images/copyRights.png" alt width="60" height="60">
+			src="../../../public/images/copyRights.png" alt width="60" height="60">
 			</img>
 		</div>		
 		<div class="socialMediaLinks">
 			<img class="copyRight" 
-			src="./src/frontend/pages/images/facebook.png" width="30" height="30">
+			src="../../../public/images/facebook.png" width="30" height="30">
 			</img>
 			<img class="copyRight" 
-			src="./src/frontend/pages/images/twitter.png" width="30" height="30">
+			src="../../../public/images/twitter.png" width="30" height="30">
 			</img>
 			<img class="copyRight" 
-			src="./src/frontend/pages/images/linkedin.png" width="30" height="30">
+			src="../../../public/images/linkedin.png" width="30" height="30">
 			</img>
 		</div>		
 	</footer>
-	`;
+	`;	
 }
 
 export default homeRouter;
