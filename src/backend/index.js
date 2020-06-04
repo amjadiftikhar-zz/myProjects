@@ -8,7 +8,7 @@ const reservationsRouter = require("./api/reservations");
 const reviewsRouter = require("./api/reviews");
 const availableReservations = require("./api/availableReservations");
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 // For week4 no need to look into this!
 const path = require("path");
@@ -39,8 +39,8 @@ app.get("/*", function(req, res) {
 	});
 });
 
-app.listen(port, () => {
-	console.log(`Server listening on port ${port}!`);
+app.listen(PORT, () => {
+	console.log(`Server listening on port ${PORT}!`);
 	pool.getConnection(err => {
 		if (err) {
 			console.log(`${err}`);

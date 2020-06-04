@@ -95,15 +95,14 @@ li a {
 	text-decoration: none;
 }
 .mealSection {
-	margin: 0;
 	display: flex;
 	color: rgb(104, 18, 18);
 	font-family: "Courier New", Courier, monospace;
-	margin-top: 5%;
-	margin-right: 10em;
-	margin-left: 6em;
-	background-color: rgb(165, 165, 163);
-	border-radius: 5em;	
+	margin-top: 7%;
+	margin-right: 13em;
+	margin-left: 9em;
+	background-color: white;
+	border-radius: 6em;	
 }
 .meal {
 	margin: 3.5em;
@@ -216,6 +215,10 @@ li a {
 #form {
 	visibility: hidden;
 }
+h2 {
+	color: purple;
+	text-decoration: underline;
+}
 h3 {
 	margin-left: 20%;
 	font-size: 30px;
@@ -224,10 +227,12 @@ h3 {
 	color: white;
 }
 h4 {
-	background-color: rgb(165, 165, 163);
+	background-color: white;
 	padding: 10px;
-	color: rgb(8, 8, 59);
+	color: rgb(1, 27, 1);
 	font-weight: bolder;
+	font-size: 20px;
+	font-family: "Courier New", Courier, monospace;
 }
 .reviews {
 	color: white;
