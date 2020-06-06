@@ -26,16 +26,16 @@ const autoSearched = () => {
 				.getElementById("sendReservation")
 				.addEventListener("click", event => {
 					event.preventDefault();
-					const name = document.getElementById("name").value;
-					const phone = document.getElementById("phoneNum").value;
-					const email = document.getElementById("email").value;
+					const customer_name = document.getElementById("name").value;
+					const phone_number = document.getElementById("phoneNum").value;
+					const e_mail = document.getElementById("email").value;
 					const number_of_guests = document.getElementById("quantity").value;
 					const meal_id = data[0].id;
-					const reservation = {
-						meal_id,
-						name,
-						phone,
-						email,
+					const reservations = {
+						meal_id,					
+						customer_name,
+						phone_number,
+						e_mail,
 						number_of_guests
 					};
 					fetch("/api/reservations", {
@@ -43,18 +43,18 @@ const autoSearched = () => {
 						headers: {
 							"Content-Type": "application/json"
 						},
-						body: JSON.stringify(reservation)
+						body: JSON.stringify(reservations)
 					})
 					.then(response => {
 						return response.json();
 					})
 					.then(reservation => {
 						console.log(reservation);
-						message.innerHTML = `Thank you for the reservation!`;
+						return message.innerHTML = `Thank you for the reservation!`;
 					})
 					.catch(error => {
 						console.log(error);
-						alert("fill the form and try again");
+						return alert("fill the form and try again");
 					});
 				});
 		});
