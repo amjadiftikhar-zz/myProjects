@@ -46,6 +46,7 @@ app.get("/*", function(req, res) {
 app.listen(PORT, () => {
 	console.log(`Server listening on port ${PORT}!`);
 	pool.getConnection(err => {
+	// pool.connect(err => { 
 		if (err) {
 			console.log(`${err}`);
 		} else {
