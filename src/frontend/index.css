@@ -131,7 +131,7 @@ li a {
 	color: white;
 	text-decoration: none;
 	border: none;
-	border-radius: 1em;
+	border-radius: 0.5em;
 	cursor: pointer;
 }
 .reviewBtn:hover {
@@ -146,7 +146,7 @@ li a {
 	border: none;
 	text-decoration: none;
 	cursor: pointer;
-	border-radius: 1em;
+	border-radius: 0.5em;
 }
 #reserveBtn:hover,
 #reserveMeal:hover {
@@ -159,7 +159,7 @@ li a {
 	color: white;
 	cursor: pointer;
 	border: none;
-	border-radius: 1em;
+	border-radius: 0.5em;
 }
 .backToAll:hover {
 	padding: 20px 30px;
@@ -171,7 +171,7 @@ li a {
 	cursor: pointer;
 	border: none;
 	text-decoration: none;
-	border-radius: 1em;
+	border-radius: 0.5em;
 }
 #backToAllMeals:hover {
 	padding: 20px 30px;
