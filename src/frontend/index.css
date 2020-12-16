@@ -363,6 +363,7 @@ input:focus {
 	font-weight: bold;
 	font-size: 1.2rem;
 	font-family: "Courier New", Courier, monospace;
+	background-color: rgb(247, 243, 243);
 	border: none;
 	cursor: pointer;
 }
