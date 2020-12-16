@@ -292,6 +292,10 @@ input:focus {
 #reserveMeal:hover {
 	padding: 0.7em 1.1em;
 }
+#reserveBtn:focus, 
+#reserveMeal:focus {
+	outline: none !important;
+}
 /* in meal card, styling back to all meals button */
 .backToAll {
 	padding: 0.6em 1.5em;
@@ -346,6 +350,7 @@ input:focus {
 	font-weight: bold;
 }
 .input {
+	background-color: rgb(247, 243, 243);
 	width: 15em;
 	height: 2.5em;
 	margin: 1em;
@@ -359,7 +364,6 @@ input:focus {
 	margin-top: 3%;
 	padding: 0.3em 2em;
 	border-radius: 1em;
-	color: rgb(18, 9, 56);
 	font-weight: bold;
 	font-size: 1.2rem;
 	font-family: "Courier New", Courier, monospace;
@@ -370,6 +374,10 @@ input:focus {
 #sendReservation:hover,
 #sendReview:hover {
 	padding: 0.4em 3em;
+}
+#sendReservation:focus,
+#sendReview:focus {
+	outline: none !important;
 }
 #message {
 	color: black;

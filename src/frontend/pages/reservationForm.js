@@ -19,7 +19,7 @@ function reservationForm() {
 				</button>
 				<p id="message"></p>
 			</div>
-		</form>;
+		</form>
 	</div>
 	`;
 }
