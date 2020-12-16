@@ -1,16 +1,21 @@
-import autoSearched from "./searchMeal";
-import renderingReview from "./reviewForm";
 import showAllMeals from "./showAllMeals";
+import autoSearched from "./searchedMeal";
 
+// function for all meals
 function allMeals(req, router) {
+	// api call for all meals
 	const url = `api/meals`;
 	fetch(url)
 		.then(response => response.json())
 		.then(data => {
-			showAllMeals(data);		
-			renderingReview();
-			document.getElementById("sendReview").addEventListener("click", event => {
+			// show all meal function call and passing data
+			showAllMeals(data);	
+			// accessing classe send review button
+			document
+				.getElementById("sendReview")
+				.addEventListener("click", event => {
 				event.preventDefault();
+				// accessing form elements
 				const title = document.getElementById("name").value;
 				const description = document.getElementById("description").value;
 				const stars = document.getElementById("stars").value;
@@ -21,6 +26,7 @@ function allMeals(req, router) {
 					stars,
 					meal_id
 				};
+				// reviews api call to make post request
 				fetch("/api/reviews", {
 					method: "POST",
 					headers: {

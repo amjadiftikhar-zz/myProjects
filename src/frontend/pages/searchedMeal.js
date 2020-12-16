@@ -1,13 +1,16 @@
-import reservationForm from "./reservationForm";
 import specificMeal from "./specificMeal";
+// import reservationForm from "./reservationForm";
 
 const input = document.getElementById("searchMeal");
+// function for autosearched Meal
 const autoSearched = () => {
+	// api call and concatenat input value
 	fetch("/api/meals?title=" + input.value)
 		.then(response => response.json())
 		.then(data => {
 			specificMeal(data);
-			reservationForm();
+			// reservationForm();
+			// meal reservation api call to evaluate if meal is available to reserve
 			fetch("/api/availableReservations")
 				.then(res => res.json())
 				.then(data => {
@@ -18,10 +21,11 @@ const autoSearched = () => {
 						) {
 							document.getElementById("reserveBtn").disabled = false;
 							document.getElementById("reserveBtn").textContent =
-								"Reserve your meal here!";
+								"Reserve your meal";
 						}
 					});
 				});
+			// send reservation button and form classes access to fill up info
 			document
 				.getElementById("sendReservation")
 				.addEventListener("click", event => {
@@ -38,6 +42,7 @@ const autoSearched = () => {
 						e_mail,
 						number_of_guests
 					};
+					// reservation api call for post method
 					fetch("/api/reservations", {
 						method: "POST",
 						headers: {
@@ -49,7 +54,7 @@ const autoSearched = () => {
 						return response.json();
 					})
 					.then(reservation => {
-						console.log(reservation);
+						// console.log(reservation);
 						return message.innerHTML = `Thank you for the reservation!`;
 					})
 					.catch(error => {
@@ -59,18 +64,35 @@ const autoSearched = () => {
 				});
 		});
 };
+// event listener to keep the DOM empty
 input.addEventListener("input", event => {
 	event.preventDefault();
-	document.getElementById("root").innerHTML = "";
 });
-document.getElementById("searchBtn").addEventListener("click", event => {
-	event.preventDefault();
-	autoSearched();
+// access search button
+document
+	.getElementById("searchBtn")
+	.addEventListener("click", event => {
+	event.preventDefault();	
+	document.getElementById("form").innerHTML = "";
+	// autoSearched function call on click
+	if(input.value === "") {
+		alert("Write some text to search")
+	} else {
+		autoSearched();
+	}	
 });
+// key press event apply
 input.addEventListener("keypress", event => {
 	if (event.keyCode === 13) {
 		event.preventDefault();
-		autoSearched();
+		document.getElementById("root").innerHTML = "";
+		document.getElementById("form").innerHTML = "";
+		// auto search function call 
+		if(input.value === "") {
+			alert("Write some text to search")
+		} else {
+			autoSearched();
+		}	
 	}
 });
 

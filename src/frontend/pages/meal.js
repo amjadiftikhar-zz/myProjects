@@ -1,4 +1,3 @@
-import reservationForm from "./reservationForm";
 import showMeal from "./showMeal"
 
 function mealsId(req, router) {
@@ -8,7 +7,6 @@ function mealsId(req, router) {
 		.then(response => response.json())
 		.then(meal => {
 			showMeal(meal);
-			reservationForm();
 			fetch("/api/availableReservations")
 				.then(res => res.json())
 				.then(data => {
@@ -17,9 +15,11 @@ function mealsId(req, router) {
 							element.id == id &&
 							element.max_reservations > element.total_reservations
 						) {
-							document.getElementById("reserveBtn").disabled = false;
-							document.getElementById("reserveBtn").textContent =
-								"Reserve your meal here!";
+							document
+								.getElementById("reserveBtn").disabled = false;
+							document
+								.getElementById("reserveBtn").textContent =
+								"Reserve your meal";
 						}
 					});
 				});
@@ -30,7 +30,8 @@ function mealsId(req, router) {
 					const customer_name = document.getElementById("name").value;
 					const phone_number = document.getElementById("phoneNum").value;
 					const e_mail = document.getElementById("email").value;
-					const number_of_guests = document.getElementById("quantity").value;
+					const number_of_guests = document
+						.getElementById("quantity").value;
 					const meal_id = id;
 					const reservations = {	
 						meal_id,					
@@ -51,7 +52,9 @@ function mealsId(req, router) {
 					})
 					.then(reservation => {
 						console.log(reservation);
-						return (message.innerHTML = `Thank you for the reservation!`);
+						return (message.innerHTML = `
+							Thank you for the reservation!`
+						);
 					})
 					.catch(error => {
 					 	console.log(error);
