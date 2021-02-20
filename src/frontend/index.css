@@ -160,7 +160,7 @@ input:focus {
 	flex-direction: column;	
 	width: 20em;
 	height: 35em;
-	padding: 2em;
+	padding: 1em 1em 1em 1em;
 	color: rgb(104, 18, 18);
 	font-family: "Courier New", Courier, monospace;
 	background-color: rgb(247, 243, 243);
@@ -179,12 +179,14 @@ input:focus {
 }
 @media only screen and (max-width:414px) {
 	.mealCard {
-		height: 37em;
+		height: 35em;
+		padding:  1em 1em 1em 1em;
 	}
 }
 @media only screen and (max-width:376px) {
 	.mealCard {
 		margin-bottom: 1.5em;
+		padding:  1em 1em 1em 1em;
 	}
 }
 @media only screen and (max-width:320px) {
@@ -193,7 +195,8 @@ input:focus {
 	}
 	.mealCard {
 		width: 17em;
-		margin-bottom: 1.7em;		
+		margin-bottom: 1.7em;
+		/* padding:  1em 1em 1em 1em;		 */
 	}
 }
 @media only screen and (max-width:280px) {
@@ -399,6 +402,7 @@ input:focus {
 	margin-bottom: 1em;
 }
 .reviewHeader {
+	width: 100%;
 	background-color:  rgb(247, 243, 243);
 	padding: 0.6em;
 	margin-bottom: 0.5em;
