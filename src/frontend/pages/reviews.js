@@ -10,9 +10,15 @@ function reviews() {
 				reviewsList.innerHTML = `
 				<div class="review">
 					<h4 class="reviewHeader">${element.title}</h4>
-					Description:&nbsp${element.description}<br>
-					Rating:&nbsp ${`&#11088;`.repeat(element.stars)}<br>
-					Date:&nbsp ${element.created_date}
+					<div class="reviewDescription">
+						Description:&nbsp${element.description}<br>
+					</div>
+					<div class="reviewDescription">
+						Rating:&nbsp ${`&#11088;`.repeat(element.stars)}<br>
+					</div>
+					<div class="reviewDescription">
+						Date:&nbsp ${element.created_date}
+					</div>					
 				</div>				
 			`;
 				reviewElement.appendChild(reviewsList);

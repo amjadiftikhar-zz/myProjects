@@ -95,7 +95,7 @@ li a {
 	padding: 0.8em;
 	cursor: pointer;
 }
-/* media queri for small devices to make search responsive */
+/* media queries for small devices to make search responsive */
 @media only screen and (max-width:540px) {
 	#searchMeal {
 		width: 14.5em;		
@@ -383,7 +383,7 @@ input:focus {
 	color: black;
 	font-weight: bold;
 }
-/* styling review section where all reviews are being rendered */
+/* styling review page section where all reviews are being rendered */
 .reviewSection {
 	width: 100%;
 	padding: 2em;
@@ -406,6 +406,40 @@ input:focus {
 	font-size: 1.3rem;
 	font-family: "Courier New", Courier, monospace;
 }
+.reviewDescription {
+	width: 100%;
+}
+/* media queries for review page  */
+@media only screen and (max-width:414px) {
+	.review {
+		width: 100%;
+	}
+}
+@media only screen and (max-width:376px) {
+	.review {
+		width: 100%;
+	}
+	.reviewSection {
+		padding: 0.5em;
+	}
+}
+@media only screen and (max-width:320px) {
+	.review {
+		width: 100%;
+	}
+	.reviewSection {
+		padding: 0.5em;
+	}
+}
+@media only screen and (max-width:280px) {
+	.review {
+		width: 100%;
+	}
+	.reviewSection {
+		padding: 0;
+	}
+}
+/* footer styles section */
 footer {
 	width: 100%;
 	display: flex;
